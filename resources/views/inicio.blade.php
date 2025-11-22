@@ -182,7 +182,7 @@ for (let i = 1; i <= 3; i++) {
     border: none;
 }
 
-/* ★★★ EFECTO ZOOM + ROTACIÓN ★★★ */
+/* efecto zoom y rotacion */
 .zoom-effect {
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -193,7 +193,7 @@ for (let i = 1; i <= 3; i++) {
 }
 </style>
 
-{{-- JS para agregar/quitar clase zoom --}}
+{{-- JS para agregar zoom --}}
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     const imagenes = document.querySelectorAll('.zoom-target');
