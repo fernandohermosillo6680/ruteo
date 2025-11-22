@@ -1,0 +1,19 @@
+@import "bulma/css/bulma.css";
+
+.custom-banner {
+    background-color: #c1a0d5; 
+    color: white; 
+}
+.custom-navbar {
+    background-color: #c1a0d5; 
+}
+
+.custom-navbar .navbar-item {
+    color: white; 
+    font-weight: bold;
+}
+
+.custom-navbar .navbar-item:hover {
+    background-color: #a250c5; 
+    color: #fff;
+}
