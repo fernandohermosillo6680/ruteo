@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@yield('title', 'Mi Sitio')</title>
 
-  {{-- Vite --}}
-  @vite('resources/css/app.css')
-  @vite('resources/js/app.js')
+  <!-- ✔ BULMA (era lo que faltaba en Railway) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- ✔ Vite (forma correcta, en una sola llamada) -->
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 <style>
 
@@ -51,10 +53,11 @@
   }
 
   /* -----------------------------------------------------------
-     🔫 CURSOR BULLET BILL (FINAL, FUNCIONANDO)
+     🔫 CURSOR BULLET BILL FIX
+     ✔ asset() para que funcione en producción
      ----------------------------------------------------------- */
   html, body, a, button, input, .producto, * {
-    cursor: url("/images/bulletbill.png") 18 18, auto !important;
+    cursor: url("{{ asset('images/bulletbill.png') }}") 18 18, auto !important;
   }
 
 </style>

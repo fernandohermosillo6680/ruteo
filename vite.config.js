@@ -8,6 +8,5 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    // Agregar base para que los assets se resuelvan correctamente en producción
-    base: './'
+    // ❌ No usar base: './'
 });
